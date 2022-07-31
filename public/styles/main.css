@@ -2,8 +2,8 @@
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
-    --color-primary: #204B6D;
-    --color-primary-dark: #774DD6;
+    --color-primary: #204b6d;
+    --color-primary-dark: #2e0788;
     --color-primary-darker: #6842c2;
     --color-secondary: #04D361;
     --color-secondary-dark: #04BF58;
@@ -11,7 +11,7 @@
     --color-text-in-primary: #D4C2FF;
     --color-text-title: #32264D;
     --color-text-complement: #9C98A6;
-    --color-text-base: #6A6180;
+    --color-text-base: #204b6d;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
@@ -34,7 +34,6 @@ body {
 
 body {
     background: var(--color-background);
-    display: flex;
 }
 
 body,
@@ -48,6 +47,13 @@ textarea {
     color: var(--color-text-base);
 }
 
+footer {
+    padding: 4rem;
+    color: var(--color-text-complement);
+    text-align: center;
+    vertical-align: middle;
+    
+}
 
 #container {
     width: 100vw; /* width = largura */
