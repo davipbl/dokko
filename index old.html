@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#204B6D">
+
+	<title>Dokko | Manutenção Predial</title>
+
+	<link rel="shortcut icon" href="./public/images/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="./public/styles/main.css">
+	<link rel="stylesheet" href="./public/styles/partials/page-landing.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+</head>
+<body id="page-landing">
+
+
+
+	<div class="slideshow-container">
+
+		<div class="text">
+			ESPECIALISTAS EM MANUTENÇÃO PREDIAL
+			<br>FALE CONOSCO EM NOSSAS PLATAFORMAS</div>
+
+		<!-- <div style="text-align:center">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div> -->
+
+		<div class="mySlides fade">
+		<img src="./public/images/logo.png" style="max-width:100%; height: auto; max-height:600px">
+		</div>
+		
+		<!-- <div class="mySlides fade">
+		<img src="./public/images/img2.jpg" style="max-width:100%; height: auto; max-height:600px"/>
+		</div>
+		
+		<div class="mySlides fade">
+		<img src="./public/images/img3.jpg" style="max-width:100%; height: auto; max-height:600px"/>
+		</div> -->
+
+		<br>
+
+		<!-- <div id="container">
+		<div class="logo-container">
+			<img src="./public/images/logo.png" alt="Dokko">
+			<h2>Engenheiros a vapor</h2>
+		</div>
+
+		<img class="hero-image" src="./public/images/landing.svg" alt="Engenharia de Manutenção Predial"> -->
+	
+		<div class="buttons-container">
+			<a class="study" href="https://instagram.com/dokkoengenharia">
+				<img src="./public/images/icons/icons8-instagram.svg" alt="Estudar">
+				Instagram
+			</a>
+			
+			<a class="give-classes" href="https://wa.me/5585981982041?text=Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Dokko">
+				<img src="./public/images/icons/icons8-whatsapp-40.svg" alt="Dar aulas">
+				Whatsapp
+			</a>
+		</div>
+	</div>
+
+	<footer>
+		<p>Página elaborada pela Dokko</p>
+		<p><a href="mailto:contato@dokko.com.br">contato@dokko.com.br</a></p>
+	</footer>
+
+	<script>
+	let slideIndex = 0;
+	showSlides();
+	window.history.pushState("dokko.com.br");
+	
+	function showSlides() {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active;", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 5000); // Change image every 2 seconds
+	}
+	</script>
+</body>
+</html>
